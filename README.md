@@ -37,9 +37,9 @@ real-world foggy (RTTS) and low-lighting (ExDark) datasets.
 ## **Weights File**  ##
 |Model|RTTS|ExDark|
 |---|---|---|
-|GDIP-Yolo|[link]()|[link]()|
-|MGDIP-Yolo|[link]()|[link]()|
-|GDIP-regularizer|[link]()|[link]()|
+|GDIP-Yolo|[link](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/sanket_kalwar_research_iiit_ac_in/ElCY3EnsKtNFqTMXU8aYrpUB6XgdvACuXo4EMNQmRTbxaQ?e=yZTnj1)|[link](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/sanket_kalwar_research_iiit_ac_in/ErOQ2LhleKVIpEYYAXg3oKMBDNlfjodl2XSj2DtbH9Ml8g?e=2Xc55M)|
+|MGDIP-Yolo|[link](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/sanket_kalwar_research_iiit_ac_in/EiIOIJTd70VNv9hFaFx6NQ8BX23zVtan5TthzM-wui3kkA?e=fj3auq)|[link](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/sanket_kalwar_research_iiit_ac_in/EpjhL9slOqxNiVCKAboN0ycBRW6GxoAeEcdkBKurTg6ZSg?e=jOneHD)|
+|GDIP-regularizer|[link](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/sanket_kalwar_research_iiit_ac_in/EhnRsxF8AUxNmiaHejavZB0B_BM10AHd7yO9MX60MCETJA?e=h5Pf4h)|[link](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/sanket_kalwar_research_iiit_ac_in/EvWkGr9GzE1HqMCkLkbnD0oBjLPTs5nXeVAm1UftU245jQ?e=W1NIRA)|
 
 # Setting up the environment: #
 ```bash
