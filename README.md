@@ -88,3 +88,6 @@ real-world foggy (RTTS) and low-lighting (ExDark) datasets.
 # Infer GDIP-REG(trained on RTTS) on custom images
 > python3 infer_GDIP_REG_RTTS.py --weights /path/to/best.pt --visiual /path/to/images
 ```
+# Who to Contact:
+* [Sanket H Kalwar](sanket.kalwar@reseach.iiit.ac.in)
+* [Dhruv Patel](dhruv.patel@research.iiit.ac.in)
