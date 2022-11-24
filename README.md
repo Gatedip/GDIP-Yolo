@@ -88,6 +88,10 @@ real-world foggy (RTTS) and low-lighting (ExDark) datasets.
 # Infer GDIP-REG(trained on RTTS) on custom images
 > python3 infer_GDIP_REG_RTTS.py --weights /path/to/best.pt --visiual /path/to/images
 ```
+
+# Training Script:
+This work is a funded project, so we have only released evaluation and inference scripts for now. We shall release the training script in the future. However, for now, you can follow the implementation details for training from the paper. As we have provided the class for GDIP-Yolo, importing it along with the hyperparameters mentioned in the paper should work.
+
 # Who to Contact:
 * [Sanket H Kalwar](sanket.kalwar@reseach.iiit.ac.in)
 * [Dhruv Patel](dhruv.patel@research.iiit.ac.in)
