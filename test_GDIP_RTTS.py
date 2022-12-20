@@ -35,7 +35,7 @@ class Tester(object):
         self.__eval = eval
         self.__classes = cfg.DATA["CLASSES"]
 
-        self.__model = Yolov3GatedDIP().to(self.__device)
+        self.__model = Yolov3GatedDIP(cfg).to(self.__device)
 
         self.__load_model_weights(weight_path)
 
@@ -47,8 +47,8 @@ class Tester(object):
 
         weight = os.path.join(weight_path)
         chkpt = torch.load(weight, map_location=self.__device)
-        # self.__model.load_state_dict(chkpt)
-        self.__model.load_state_dict(chkpt['model'])
+        self.__model.load_state_dict(chkpt)
+        # self.__model.load_state_dict(chkpt['model'])
         print("loading weight file is done")
         del chkpt
 

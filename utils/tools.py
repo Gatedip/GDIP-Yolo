@@ -5,7 +5,7 @@ import torch
 import numpy as np
 import cv2
 import random
-import config.yolov3_config_voc as cfg
+# import config.yolov3_config_RTTS as cfg
 import os
 
 
@@ -256,28 +256,28 @@ def init_seeds(seed=0):
     os.environ['PYTHONHASHSEED'] = str(seed)
 
 
-def plot_box(bboxes, img, id = None, color=None, line_thickness=None):
-    """
+# def plot_box(bboxes, img, id = None, color=None, line_thickness=None):
+#     """
 
-    """
+#     """
 
-    img = img.permute(0,2,3,1).contiguous()[0].numpy() if isinstance(img, torch.Tensor) else img# [C,H,W] ---> [H,W,C]
-    img_size, _, _ = img.shape
-    bboxes[:, :4] = xywh2xyxy(bboxes[:, :4])
-    tl = line_thickness or round(0.002 * max(img.shape[0:2])) + 1  # line thickness
-    color = color or [random.randint(0, 255) for _ in range(3)]
-    for i, x in enumerate(bboxes):
-        c1, c2 = (int(x[0]), int(x[1])), (int(x[2]), int(x[3]))
-        cv2.rectangle(img, c1, c2, color, thickness=tl)
-        label = cfg.DATA["CLASSES"][int(x[4])]
-        if label:
-            tf = max(tl - 1, 1)  # font thickness
-            t_size = cv2.getTextSize(label, 0, fontScale=tl / 3, thickness=tf)[0]
-            c2 = c1[0] + t_size[0], c1[1] - t_size[1] - 3
-            cv2.rectangle(img, c1, c2, color, -1)  # filled
-            cv2.putText(img, label, (c1[0], c1[1] - 2), 0, tl / 3, [0, 0, 0], thickness=tf, lineType=cv2.LINE_AA)
+#     img = img.permute(0,2,3,1).contiguous()[0].numpy() if isinstance(img, torch.Tensor) else img# [C,H,W] ---> [H,W,C]
+#     img_size, _, _ = img.shape
+#     bboxes[:, :4] = xywh2xyxy(bboxes[:, :4])
+#     tl = line_thickness or round(0.002 * max(img.shape[0:2])) + 1  # line thickness
+#     color = color or [random.randint(0, 255) for _ in range(3)]
+#     for i, x in enumerate(bboxes):
+#         c1, c2 = (int(x[0]), int(x[1])), (int(x[2]), int(x[3]))
+#         cv2.rectangle(img, c1, c2, color, thickness=tl)
+#         label = cfg.DATA["CLASSES"][int(x[4])]
+#         if label:
+#             tf = max(tl - 1, 1)  # font thickness
+#             t_size = cv2.getTextSize(label, 0, fontScale=tl / 3, thickness=tf)[0]
+#             c2 = c1[0] + t_size[0], c1[1] - t_size[1] - 3
+#             cv2.rectangle(img, c1, c2, color, -1)  # filled
+#             cv2.putText(img, label, (c1[0], c1[1] - 2), 0, tl / 3, [0, 0, 0], thickness=tf, lineType=cv2.LINE_AA)
 
-    # cv2.imshow("img-bbox", img[:, :, ::-1])
-    # cv2.waitKey(0)
-    img = cv2.cvtColor(img* 255.0, cv2.COLOR_RGB2BGR).astype(np.float32)
-    cv2.imwrite("../data/dataset{}.jpg".format(id), img)
+#     # cv2.imshow("img-bbox", img[:, :, ::-1])
+#     # cv2.waitKey(0)
+#     img = cv2.cvtColor(img* 255.0, cv2.COLOR_RGB2BGR).astype(np.float32)
+#     cv2.imwrite("../data/dataset{}.jpg".format(id), img)

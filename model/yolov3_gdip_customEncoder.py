@@ -3,11 +3,11 @@ from model.gated_dip_modified_customEncoder import GatedDIP
 from model.yolov3 import Yolov3
 
 class Yolov3GatedDIP(torch.nn.Module):
-    def __init__(self):
+    def __init__(self, cfg):
         super(Yolov3GatedDIP,self).__init__()
-        print("Yolov3GatedDIP with custom Encoder for 10 classes!!")
+        # print("Yolov3GatedDIP with custom Encoder for 10 classes!!")
         self.gated_dip = GatedDIP(256)
-        self.yolov3 = Yolov3()
+        self.yolov3 = Yolov3(cfg)
     
     def forward(self,x):
         out_x,gates = self.gated_dip(x)

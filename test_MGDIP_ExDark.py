@@ -31,7 +31,7 @@ class Tester(object):
         self.__eval = eval
         self.__classes = cfg.DATA["CLASSES"]
 
-        self.__model = Yolov3MultiGDIP().to(self.__device)
+        self.__model = Yolov3MultiGDIP(cfg).to(self.__device)
 
         self.__load_model_weights(weight_path)
 
