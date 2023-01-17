@@ -1,4 +1,8 @@
-# **GDIP: Gated Differentiable Image Processing for Object-Detection in Adverse Conditions**  [[Website](https://gatedip.github.io/)][[Paper](https://arxiv.org/pdf/2209.14922.pdf)]
+# **GDIP: Gated Differentiable Image Processing for Object-Detection in Adverse Conditions**  [[Website](https://gatedip.github.io/)][[Paper](https://arxiv.org/pdf/2209.14922.pdf)] | Accepted for ICRA 2023
+
+## UPDATE: **Accepted for ICRA 2023**
+
+
 ![GDIP-Yolo](docs/images/architecture_gdip.png)
 
 ## **Abstract** 
@@ -91,6 +95,29 @@ real-world foggy (RTTS) and low-lighting (ExDark) datasets.
 
 # Training Script:
 This work is a funded project, so we have only released evaluation and inference scripts for now. We shall release the training script in the future. However, for now, you can follow the implementation details for training from the paper. As we have provided the class for GDIP-Yolo, importing it along with the hyperparameters mentioned in the paper should work.
+
+# Citation:
+If you find our work useful, please consider citing us:
+```
+@misc{https://doi.org/10.48550/arxiv.2209.14922,
+  doi = {10.48550/ARXIV.2209.14922},
+  
+  url = {https://arxiv.org/abs/2209.14922},
+  
+  author = {Kalwar, Sanket and Patel, Dhruv and Aanegola, Aakash and Konda, Krishna Reddy and Garg, Sourav and Krishna, K Madhava},
+  
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {GDIP: Gated Differentiable Image Processing for Object-Detection in Adverse Conditions},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
+```
 
 # Who to Contact:
 * [Sanket H Kalwar](sanket.kalwar@reseach.iiit.ac.in)
